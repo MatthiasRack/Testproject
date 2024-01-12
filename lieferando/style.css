@@ -1,0 +1,181 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.emptyContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.leftright {
+    display: flex;
+    width: 99%;
+}
+
+.leftDiv {
+    width: 70%;
+}
+
+.rightDiv {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.favorite {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.backgroundimg {
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.stylefood {
+    display: flex;
+    border-bottom: 2px solid rgba(3, 2, 2, 0.2);
+    justify-content: space-between;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.food {
+    display: flex;
+    border: 2px solid rgba(1, 2, 2, 0.2);
+    border-radius: 10px;
+    margin: 4px;
+    justify-content: space-between;
+    
+}
+
+.overfood {
+    margin: 2px;
+    width: 100%;
+}
+
+.plusminus {
+    padding-left: 10px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.plusBasket {
+    display: flex;
+    width: 50px;
+}
+
+.addplusBasket {
+    margin: 6px;  
+}
+
+.plus {
+    background-color: white;
+    height: 25px;
+}
+
+.cursor {
+    border-radius: 50%;
+}
+
+.cursor:hover {
+    cursor: pointer;
+   mix-blend-mode: exclusion;
+    
+}
+.trash {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.outBasket {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.basketMenu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.outBasketSum {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.LeftOutBasket {
+    display: flex;
+    flex-direction: column;
+}
+
+.warenkorb {
+    padding: 10px;
+    border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.orderButton {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 18px;
+    border: 2px solid rgba(2, 2, 2, 0.5);
+    background-color: rgb(255, 128, 0);
+    cursor: pointer;
+}
+
+.orderButton:hover {
+    border: 4px solid rgba(2, 2, 2, 0.3);
+    background-color: rgb(255, 127, 0);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.responsivBasket {
+    position: absolute;
+    background-color: white;
+    width: 290px;
+    border: 4px solid rgba(255, 127, 0, 0.3);
+    border-radius: 8%;
+}
+
+@media(max-width: 860px) {
+   /* .show-burgermenu {
+        display: flex !important;
+    }*/
+
+    .burger-menu {
+        width: 40px !important;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .rightDiv {
+        display: none;
+    }
+
+    .leftDiv {
+        width: 100%;
+    }
+
+}

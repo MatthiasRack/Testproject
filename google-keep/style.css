@@ -1,0 +1,74 @@
+body {
+    background-color: rgba(1, 1, 1, 0.2);
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 25px;
+    object-fit: contain;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+}
+
+.addNote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 150px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.adsNotes {
+    background-color: rgba(1, 1, 0.2, 0.3);
+    width: 250px;
+    border: 2px solid black;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.adsNotesDelete {
+    display: flex;
+    justify-content: end;
+}
+
+.inputField {
+    width: 500px;
+    height: 35px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.notize {
+    display: flex;
+    width: 70%;
+    background-color: white;
+}
+
+.trash {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    gap: 10px;
+}
+
+.addButton {
+    display: flex;
+    justify-content: end;
+    width: 500px;
+}

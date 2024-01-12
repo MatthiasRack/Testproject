@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.upperPicture {
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #e1306c;
+}
+
+.author {
+    align-items: center;
+    display: flex;
+}
+
+.picture {
+    width: 500px;
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-bottom: 2px solid rgba(2, 2, 2, 0.2);
+}
+
+.menu {
+    display: flex;
+}
+
+.icon {
+    width: 25px;
+    display: flex;
+    margin: 10px;
+}
+
+.postmenu {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lefticons {
+    width: 10%;
+    margin-left: 20px;
+    border-right: 2px solid rgba(2, 2, 2, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.rightmenu {
+    width: 80%;
+}
+
+.iconalign {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.instlogo {
+    height: 100px;
+}
+
+.postIcon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postIcons {
+    display: flex;
+    height: 30px;
+}
+
+.saveIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.postIconsImg {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.inputPost {
+    width: 450px;
+    border: none;
+}
+
+.buttonPost {
+    border: none;
+}
+
+.margin {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.heart {
+    content: url(./img/herz.png);
+}
+
+.heartred {
+    content: url(./img/herzred.png);
+}
+
+.heart:active {
+    content: url(./img/herzred.png);
+}
+
+@media (max-width: 1660px) {
+    span {
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 1500px) {
+    span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1370px) {
+    span {
+        font-size: 0%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .instlogo {
+        height: 80px;
+    }
+}
+
+@media (max-width: 850px) {
+    .instlogo {
+        height: 70px;
+    }
+}
+
+@media (max-width: 751px) {
+    .responsiv {
+        display: flex;
+    }
+    .menu {
+        display: block;
+    }
+
+    .lefticons {
+        width: 100%;
+        margin-left: 0;
+        border-bottom: 2px solid rgba(2, 2, 2, 0.2);
+        display: flex;
+        flex-direction: row;
+        border-right: none;
+        justify-content: center;
+    }
+    .instlogo {
+        display: none;
+    }
+    .instagramLogo {
+        display: none;
+    }
+    .rightmenu {
+        width: 100%;
+    }
+    .iconalign {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .upper {
+        margin: 10px;
+    }
+
+    .upperPicture {
+        margin: 10px;
+    }
+
+    .picture {
+        width: 430px;
+    }
+    .postContainer {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.inputPost {
+    width: 400px;
+    border: none;
+}
+
+@media (max-width: 450px) {
+    .iconalign {
+        padding-right: 8px;
+    }
+    .postMain {
+        width: 400px;
+    }
+
+    .picture {
+        width: 310px;
+}
+
+.inputPost {
+    width: 350px;
+    border: none;
+}
+
+.upperPicture {
+    margin: 6px;
+}
+
+.margin {
+    width: 365px;
+}
+}
+
+@media (max-width: 376px) {
+    .icon {
+        margin: 4px;
+    }
+
+    .postMain {
+        width: 350px;
+    }
+
+    .picture {
+        width: 350px;
+}
+
+.margin {
+    width: 350px;
+}
+.inputPost {
+    width: 300px;
+    border: none;
+   
+}
+}

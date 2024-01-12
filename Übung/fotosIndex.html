@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="fotoStyle.css">
+    <script src="fotosScript.js"></script>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="../google-foto/images/image1.jpg" alt="Bild 1" onclick="showImage('../google-foto/images/image1.jpg')">
+        <img src="bild2.jpg" alt="Bild 2" onclick="showImage('bild2.jpg')">
+        <img src="bild3.jpg" alt="Bild 3" onclick="showImage('bild3.jpg')">
+    </div>
+
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+</body>
+
+</html>

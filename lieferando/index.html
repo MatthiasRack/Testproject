@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images" href="./images/logo.png">
+    <link rel="stylesheet" href="fonts.css">
+
+    <title>Document</title>
+</head>
+
+
+<body onload="render()">
+
+    <div>
+        <div style="display: flex; justify-content: space-between; width: 99%;">
+            <img src="./images/lieferando-brand.06ee84e9.svg" alt="">
+            <div class="burgerhidden" id="burger"><img onclick="hidemenu()" class="burger-menu" src="./images/shoppingbasket.png"
+                    alt="Kochwelt"></div>
+        </div>
+        <div class="leftright">
+            <div class="leftDiv">
+
+
+                <div class="backgroundimg"></div>
+                <div>
+                    <div class="favorite">
+                        <div></div>
+                        <div> <img src="./images/info.png" alt="" style="padding-right: 10px;">
+                            <img src="./images/favorite.png" alt="" style="padding-right: 10px;">
+                        </div>
+                    </div>
+                    <div class="overfood" id="menu"></div>
+                </div>
+
+            </div>
+
+
+                <div class="rightDiv" id="rightDiv">
+
+                    <p onclick="closed()" class="burger-menu">close</p>
+
+                    <div style="width: 100%;">
+                        <h3 class="warenkorb">Warenkorb</h3>
+                    </div>
+
+                    <div class="basketMenu" id="basket"></div> <br>
+
+                    <div id="emptyContainer">
+
+                        <div class="trash">
+                            <h3>Dein Warenkorb ist leer.</h3>
+                            <img src="./images/shoppingbasket.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

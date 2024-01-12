@@ -1,0 +1,77 @@
+.notes {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-left: 10px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+justify-content: center;
+}
+
+.inputFields {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-direction: column;
+    box-shadow: 0 1px 2px 0 rgba(10, 10, 10, 0.1);
+    width: 500px;
+    border: 2px solid;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containertwo {
+    display: flex;
+    width: 100%;
+}
+
+.containerthree {
+    width: 30%;
+}
+
+.containerfor {
+width: 70%;
+padding-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    width: 460px;
+}
+
+.input {
+    width: 460px;
+    padding: 2px;
+    border: none;
+}
+.addButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-right: 8px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.garbage {
+    width: 100px;
+}
