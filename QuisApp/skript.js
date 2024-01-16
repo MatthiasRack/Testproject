@@ -60,6 +60,9 @@ let questions = [
 let rightQuestions = 0;
 let currentQuestion = 0;
 
+let AUDIO_SUCCESS = new Audio('sounds/right.mp3');
+let AUDIO_FAIL = new Audio('sounds/wrong.mp3');
+
 function init() {
     document.getElementById('all-questions').innerHTML = questions.length;
 
@@ -106,10 +109,12 @@ function answer(selection) {
 
     if (selectedQuestionNumber == question['right_answer']) { // Richtige Frage beantwortet
         document.getElementById(selection).parentNode.classList.add('bg-success'); // Übergeordneter Div-Container wird angesprochen!
+        AUDIO_SUCCESS.play();
         rightQuestions++; // gibt am Ende die richtigen Antworten aus
     } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger'); // Übergeordneter Div-Container wird angesprochen!
         document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
+        AUDIO_FAIL.play();
     }
     document.getElementById('next-button').disabled = false;
 }
