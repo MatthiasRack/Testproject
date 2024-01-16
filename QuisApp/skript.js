@@ -58,7 +58,6 @@ let questions = [
 ];
 
 let rightQuestions = 0;
-
 let currentQuestion = 0;
 
 function init() {
@@ -80,7 +79,7 @@ function showQuestion() {
         document.getElementById('header-img').src = 'img/trophy.png';
     } else { // show question
 
-        let percent = (currentQuestion +1) / questions.length;
+        let percent = (currentQuestion + 1) / questions.length;
         percent = Math.round(percent * 100); // Math.round rundet die Zahl auf
 
         document.getElementById('progress-bar').innerHTML = `${percent} %`;
@@ -131,4 +130,16 @@ function resetAnswerButton() {
     document.getElementById('answer_3').parentNode.classList.remove('bg-success');
     document.getElementById('answer_4').parentNode.classList.remove('bg-danger');
     document.getElementById('answer_4').parentNode.classList.remove('bg-success');
+}
+
+function restartGame() {
+    document.getElementById('header-img').src = 'img/pencil.jpg';
+    document.getElementById('questionBody').style = ''; // questionBody wieder anzeigen
+    document.getElementById('end-screen').style = 'display: none;'; // Endscreen ausblenden
+
+    rightQuestions = 0;
+    currentQuestion = 0;
+
+
+    init();
 }
